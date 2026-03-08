@@ -473,7 +473,7 @@ def plot_gt_vs_prediction_animation(
     pad = 40
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 10))
-    for ax, title in [(ax1, "Ground Truth"), (ax2, "Model Prediction")]:
+    for ax, title in [(ax1,"Ground Truth"), (ax2, "Model Prediction")]:
         ax.set_facecolor("white")
         visualizations.add_map(ax, scenario)
         ax.set_xlim(min(all_xs)-pad, max(all_xs)+pad)
